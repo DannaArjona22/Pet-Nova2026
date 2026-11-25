@@ -1,1 +1,1 @@
-# Pet-Nova2026
+# Petnova-project
