@@ -6,9 +6,10 @@
 <meta name="description" content="PETNOVA: a community in Panama for better care of the animals we love.">
 <title>PETNOVA</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Erica+One&family=Nunito:wght@500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@600;800&family=DM+Sans:wght@400;500;600;700&family=Erica+One&family=Nunito:wght@500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.12.0/dist/maplibre-gl.css">
 <link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/petmoments.css">
 </head>
 <body>
 <a class="skip-link" href="#contenido">Skip to content</a>
@@ -72,18 +73,25 @@
     </button>
   </div>
   <div class="care-panels-index" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span></div>
-</section><section class="petmoments" id="petmoments" aria-labelledby="petmoments-title">
-  <div class="pm-sticky-scene">
-
-  <div class="pm-heading">
-    <h2 id="petmoments-title">Pet Moments</h2>
-    <p class="pm-caption">Every photo tells the story of our greatest adventures and the quiet beauty of our daily lives together. These precious memories are a gift we will cherish forever.</p>
+</section><section class="petmoments mo-album" id="petmoments" aria-labelledby="petmoments-title">
+  <div class="mo-card" id="moBoard">
+    <div class="mo-grid" aria-hidden="true"></div>
+    <div class="mo-top"><span class="mo-badge">Pet Moments · Free to share</span><h2 id="petmoments-title">Fun Moments<br>With Your Pets</h2><p>Photos of every adventure and every ordinary day together: memories to keep forever. Save them in your digital album and relive them anytime.</p></div>
+    <figure class="mo-pol" tabindex="0" style="--x:3%;--y:8%;--r:-9deg;--d:0"><div class="mo-pol-in"><i class="mo-tape"></i><img src="img/momento-abrazo-de-gatitos.webp" alt="A girl hugging her two tabby cats" loading="lazy" draggable="false"><figcaption>Luna &amp; Simba<span>double cuddles</span></figcaption></div></figure>
+    <figure class="mo-pol" tabindex="0" style="--x:81%;--y:6%;--r:8deg;--d:1"><div class="mo-pol-in"><i class="mo-tape"></i><img src="img/momento-perrito-con-gorro.webp" alt="A dog wearing a turkey hat with a toy" loading="lazy" draggable="false"><figcaption>Toby<span>party hat day</span></figcaption></div></figure>
+    <figure class="mo-pol" tabindex="0" style="--x:6%;--y:50%;--r:6deg;--d:2"><div class="mo-pol-in"><i class="mo-tape"></i><img src="img/momento-golden-en-el-carro.webp" alt="A boy resting next to his golden retriever puppy in the car" loading="lazy" draggable="false"><figcaption>Sunny<span>road trip buddy</span></figcaption></div></figure>
+    <figure class="mo-pol" tabindex="0" style="--x:25%;--y:43%;--r:-5deg;--d:3"><div class="mo-pol-in"><i class="mo-tape"></i><img src="img/momento-perro-con-cartel-pet-nova.webp" alt="A black and white dog posing in the Pet Nova photo frame" loading="lazy" draggable="false"><figcaption>Oreo<span>proud Pet Nova pup</span></figcaption></div></figure>
+    <figure class="mo-pol" tabindex="0" style="--x:44%;--y:50%;--r:3deg;--d:4"><div class="mo-pol-in"><i class="mo-tape"></i><img src="img/momento-siesta-con-golden.webp" alt="A girl sleeping hugged by her golden retriever" loading="lazy" draggable="false"><figcaption>Honey<span>nap time hugs</span></figcaption></div></figure>
+    <figure class="mo-pol" tabindex="0" style="--x:62%;--y:42%;--r:-6deg;--d:5"><div class="mo-pol-in"><i class="mo-tape"></i><img src="img/momento-boyero-en-la-cocina.webp" alt="A girl sticking out her tongue next to her Bernese mountain dog" loading="lazy" draggable="false"><figcaption>Max<span>silly faces club</span></figcaption></div></figure>
+    <figure class="mo-pol mo-add" tabindex="0" style="--x:80%;--y:51%;--r:5deg;--d:6"><div class="mo-pol-in"><i class="mo-tape"></i><div class="mo-add-ph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3 7.2 5H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-3.2L15 3H9zm3 15a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>Add your moment</div><figcaption>Your pet<span>tap to upload</span></figcaption><input type="file" accept="image/*" hidden aria-label="Upload a photo of your pet"></div></figure>
+    <img class="mo-stk" src="img/sticker-gato-negro.webp" alt="Black cat sticker" draggable="false" style="--x:18%;--y:19%;--r:-8deg;--w:92px;--d:7">
+    <img class="mo-stk" src="img/sticker-gatito-atigrado.webp" alt="Tabby kitten sticker" draggable="false" style="--x:71%;--y:27%;--r:10deg;--w:108px;--d:8">
+    <img class="mo-stk" src="img/sticker-cocker.webp" alt="Cocker spaniel puppy sticker" draggable="false" style="--x:36%;--y:79%;--r:-6deg;--w:128px;--d:9">
+    <p class="mo-hint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a2 2 0 0 1 2 2v6h1V5a2 2 0 1 1 4 0v9a8 8 0 0 1-8 8h-.5A7.5 7.5 0 0 1 3 14.5V9a2 2 0 1 1 4 0v3h1V4a2 2 0 1 1 4 0z"/></svg> Drag the photos around · tap one to open it</p>
+    <div class="mo-flash" aria-hidden="true"></div>
   </div>
-  <div class="pm-stage" aria-hidden="true"></div>
-  <div class="pm-bottom">
-    <span class="pm-edition">PETNOVA · MOMENTS N.º 01</span>
-  </div>
-</div></section>
+  <div class="mo-lightbox" id="moLightbox" aria-hidden="true"><figure><button type="button" class="mo-lb-close" aria-label="Close photo">&times;</button><img src="" alt=""><figcaption></figcaption></figure></div>
+</section>
 <section class="values">
   <div class="values-scroll-scene">
     <div class="values-copy">
@@ -185,32 +193,3 @@
 <script src="menu-animado.js"></script>
 <script src="sticker-footer.js"></script>
 </body></html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
